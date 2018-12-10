@@ -78,7 +78,7 @@ class Product extends Component {
         </div>
 
 
-        <div>
+        <div className="product-account">
           <h4 className="product-name">{this.props.name}</h4>
           <p className="product-price">{this.props.price}</p>
           <Counter
