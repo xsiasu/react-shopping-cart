@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { findDOMNode } from "react-dom";
 
+
 class QuickView extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +34,7 @@ class QuickView extends Component {
   }
 
   render() {
+    let quantity = this.props.productQuantity;
     return (
       <div
         className={

@@ -71,33 +71,37 @@ class Product extends Component {
               image,
               name,
               price,
-              id,
+              id, 
               quantity
             )}
           />
         </div>
-        <h4 className="product-name">{this.props.name}</h4>
-        <p className="product-price">{this.props.price}</p>
-        <Counter
-          productQuantity={quantity}
-          updateQuantity={this.props.updateQuantity}
-          resetQuantity={this.resetQuantity}
-        />
-        <div className="product-action">
-          <button
-            className={!this.state.isAdded ? "" : "added"}
-            type="button"
-            onClick={this.addToCart.bind(
-              this,
-              image,
-              name,
-              price,
-              id,
-              quantity
-            )}
-          >
-            {!this.state.isAdded ? "ADD TO CART" : "✔ ADDED"}
-          </button>
+
+
+        <div>
+          <h4 className="product-name">{this.props.name}</h4>
+          <p className="product-price">{this.props.price}</p>
+          <Counter
+            productQuantity={quantity}
+            updateQuantity={this.props.updateQuantity}
+            resetQuantity={this.resetQuantity}
+          />
+          <div className="product-action">
+            <button
+              className={!this.state.isAdded ? "" : "added"}
+              type="button"
+              onClick={this.addToCart.bind(
+                this,
+                image,
+                name,
+                price,
+                id,
+                quantity
+              )}
+            >
+              {!this.state.isAdded ? "ADD TO CART" : "✔ ADDED"}
+            </button>
+          </div>
         </div>
       </div>
     );

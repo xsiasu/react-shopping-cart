@@ -6,7 +6,7 @@
   .product-image {
     overflow: hidden;
     border-radius: 2px 2px 0 0;
-    max-height: 300px;
+    // max-height: 300px;
     img {
       cursor: zoom-in;
       width: 100%;
@@ -14,7 +14,7 @@
       transition: transform 300ms ease-in;
       transform: scale(1);
       @media (min-width: 991px) {
-        min-height: 200px;
+        // min-height: 200px;
       }
       &:hover {
         transform: scale(1.1);
