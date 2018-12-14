@@ -53,6 +53,7 @@ class Counter extends Component {
       value: 1
     });
   }
+  
   render() {
     return (
       <div className="stepper-input">

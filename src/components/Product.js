@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Counter from "./Counter";
 
+
+
+
 class Product extends Component {
   constructor(props) {
     super(props);
@@ -10,6 +13,7 @@ class Product extends Component {
       isAdded: false
     };
   }
+
   addToCart(image, name, price, id, quantity) {
     this.setState(
       {
@@ -39,6 +43,7 @@ class Product extends Component {
       }
     );
   }
+  
   quickView(image, name, price, id) {
     this.setState(
       {
@@ -76,8 +81,6 @@ class Product extends Component {
             )}
           />
         </div>
-
-
         <div className="product-account">
           <h4 className="product-name">{this.props.name}</h4>
           <p className="product-price">{this.props.price}</p>
